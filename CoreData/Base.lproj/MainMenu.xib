@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.Cocoa.XIB" version="3.0" toolsVersion="9046" systemVersion="15B42" targetRuntime="MacOSX.Cocoa" propertyAccessControl="none" useAutolayout="YES" customObjectInstantitationMethod="direct">
+<document type="com.apple.InterfaceBuilder3.Cocoa.XIB" version="3.0" toolsVersion="9531" systemVersion="15C50" targetRuntime="MacOSX.Cocoa" propertyAccessControl="none" useAutolayout="YES" customObjectInstantitationMethod="direct">
     <dependencies>
         <deployment identifier="macosx"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.CocoaPlugin" version="9046"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.CocoaPlugin" version="9531"/>
         <capability name="box content view" minToolsVersion="7.0"/>
     </dependencies>
     <objects>
@@ -685,7 +685,6 @@
                             <subviews>
                                 <button verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="j0b-07-IUf">
                                     <rect key="frame" x="31" y="19" width="23" height="35"/>
-                                    <animations/>
                                     <buttonCell key="cell" type="smallSquare" bezelStyle="smallSquare" image="NSAddTemplate" imagePosition="overlaps" alignment="center" lineBreakMode="truncatingTail" state="on" borderStyle="border" imageScaling="proportionallyDown" inset="2" id="OMg-Wx-o2w">
                                         <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
                                         <font key="font" metaFont="system"/>
@@ -696,7 +695,6 @@
                                 </button>
                                 <button verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="cdC-lZ-kd5">
                                     <rect key="frame" x="63" y="19" width="20" height="35"/>
-                                    <animations/>
                                     <buttonCell key="cell" type="smallSquare" bezelStyle="smallSquare" image="NSRemoveTemplate" imagePosition="overlaps" alignment="center" lineBreakMode="truncatingTail" state="on" borderStyle="border" imageScaling="proportionallyDown" inset="2" id="w7g-jk-3St">
                                         <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
                                         <font key="font" metaFont="system"/>
@@ -715,7 +713,6 @@
                                             <tableView verticalHuggingPriority="750" allowsExpansionToolTips="YES" columnAutoresizingStyle="lastColumnOnly" columnSelection="YES" multipleSelection="NO" autosaveColumns="NO" headerView="nW7-kO-1g4" id="c8g-sD-VoM">
                                                 <rect key="frame" x="0.0" y="0.0" width="238" height="111"/>
                                                 <autoresizingMask key="autoresizingMask"/>
-                                                <animations/>
                                                 <size key="intercellSpacing" width="3" height="2"/>
                                                 <color key="backgroundColor" name="controlBackgroundColor" catalog="System" colorSpace="catalog"/>
                                                 <color key="gridColor" name="gridColor" catalog="System" colorSpace="catalog"/>
@@ -739,30 +736,23 @@
                                                 </tableColumns>
                                             </tableView>
                                         </subviews>
-                                        <animations/>
                                         <color key="backgroundColor" name="controlBackgroundColor" catalog="System" colorSpace="catalog"/>
                                     </clipView>
-                                    <animations/>
                                     <scroller key="horizontalScroller" identifier="author" hidden="YES" verticalHuggingPriority="750" doubleValue="1" horizontal="YES" id="2tw-42-tbQ">
-                                        <rect key="frame" x="-7" y="8" width="0.0" height="15"/>
+                                        <rect key="frame" x="1" y="7" width="0.0" height="16"/>
                                         <autoresizingMask key="autoresizingMask"/>
-                                        <animations/>
                                     </scroller>
                                     <scroller key="verticalScroller" identifier="title" hidden="YES" verticalHuggingPriority="750" horizontal="NO" id="RQi-xI-qdI">
-                                        <rect key="frame" x="-14" y="15" width="15" height="0.0"/>
+                                        <rect key="frame" x="-15" y="23" width="16" height="0.0"/>
                                         <autoresizingMask key="autoresizingMask"/>
-                                        <animations/>
                                     </scroller>
                                     <tableHeaderView key="headerView" id="nW7-kO-1g4">
                                         <rect key="frame" x="0.0" y="0.0" width="238" height="23"/>
                                         <autoresizingMask key="autoresizingMask"/>
-                                        <animations/>
                                     </tableHeaderView>
                                 </scrollView>
                             </subviews>
-                            <animations/>
                         </view>
-                        <animations/>
                         <color key="borderColor" white="0.0" alpha="0.41999999999999998" colorSpace="calibratedWhite"/>
                         <color key="fillColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                     </box>
@@ -774,7 +764,6 @@
                             <subviews>
                                 <button verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="6kG-Sw-gM9">
                                     <rect key="frame" x="31" y="19" width="23" height="35"/>
-                                    <animations/>
                                     <buttonCell key="cell" type="smallSquare" bezelStyle="smallSquare" image="NSAddTemplate" imagePosition="overlaps" alignment="center" lineBreakMode="truncatingTail" state="on" borderStyle="border" imageScaling="proportionallyDown" inset="2" id="4jT-T1-4ak">
                                         <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
                                         <font key="font" metaFont="system"/>
@@ -786,7 +775,6 @@
                                 </button>
                                 <button verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="MId-9b-PG1">
                                     <rect key="frame" x="63" y="19" width="20" height="35"/>
-                                    <animations/>
                                     <buttonCell key="cell" type="smallSquare" bezelStyle="smallSquare" image="NSRemoveTemplate" imagePosition="overlaps" alignment="center" lineBreakMode="truncatingTail" state="on" borderStyle="border" imageScaling="proportionallyDown" inset="2" id="C3m-uU-SeD">
                                         <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
                                         <font key="font" metaFont="system"/>
@@ -805,7 +793,6 @@
                                             <tableView verticalHuggingPriority="750" allowsExpansionToolTips="YES" columnAutoresizingStyle="lastColumnOnly" columnSelection="YES" multipleSelection="NO" autosaveColumns="NO" headerView="G16-v8-RPS" id="Qmb-HP-aNM">
                                                 <rect key="frame" x="0.0" y="0.0" width="238" height="111"/>
                                                 <autoresizingMask key="autoresizingMask"/>
-                                                <animations/>
                                                 <size key="intercellSpacing" width="3" height="2"/>
                                                 <color key="backgroundColor" name="controlBackgroundColor" catalog="System" colorSpace="catalog"/>
                                                 <color key="gridColor" name="gridColor" catalog="System" colorSpace="catalog"/>
@@ -845,30 +832,23 @@
                                                 </tableColumns>
                                             </tableView>
                                         </subviews>
-                                        <animations/>
                                         <color key="backgroundColor" name="controlBackgroundColor" catalog="System" colorSpace="catalog"/>
                                     </clipView>
-                                    <animations/>
                                     <scroller key="horizontalScroller" identifier="author" hidden="YES" verticalHuggingPriority="750" horizontal="YES" id="TiA-Bd-frk">
-                                        <rect key="frame" x="-7" y="8" width="0.0" height="15"/>
+                                        <rect key="frame" x="1" y="7" width="0.0" height="16"/>
                                         <autoresizingMask key="autoresizingMask"/>
-                                        <animations/>
                                     </scroller>
                                     <scroller key="verticalScroller" identifier="title" hidden="YES" verticalHuggingPriority="750" horizontal="NO" id="1Zx-Qg-c2Z">
-                                        <rect key="frame" x="-14" y="15" width="15" height="0.0"/>
+                                        <rect key="frame" x="-15" y="23" width="16" height="0.0"/>
                                         <autoresizingMask key="autoresizingMask"/>
-                                        <animations/>
                                     </scroller>
                                     <tableHeaderView key="headerView" id="G16-v8-RPS">
                                         <rect key="frame" x="0.0" y="0.0" width="238" height="23"/>
                                         <autoresizingMask key="autoresizingMask"/>
-                                        <animations/>
                                     </tableHeaderView>
                                 </scrollView>
                             </subviews>
-                            <animations/>
                         </view>
-                        <animations/>
                         <color key="borderColor" white="0.0" alpha="0.41999999999999998" colorSpace="calibratedWhite"/>
                         <color key="fillColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                     </box>
@@ -880,7 +860,6 @@
                             <subviews>
                                 <button verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="dBK-g6-R3P">
                                     <rect key="frame" x="31" y="21" width="23" height="35"/>
-                                    <animations/>
                                     <buttonCell key="cell" type="smallSquare" bezelStyle="smallSquare" image="NSAddTemplate" imagePosition="overlaps" alignment="center" lineBreakMode="truncatingTail" state="on" borderStyle="border" imageScaling="proportionallyDown" inset="2" id="zzf-s7-KdR">
                                         <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
                                         <font key="font" metaFont="system"/>
@@ -892,7 +871,6 @@
                                 </button>
                                 <button verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="8kf-d7-VfR">
                                     <rect key="frame" x="63" y="21" width="20" height="35"/>
-                                    <animations/>
                                     <buttonCell key="cell" type="smallSquare" bezelStyle="smallSquare" image="NSRemoveTemplate" imagePosition="overlaps" alignment="center" lineBreakMode="truncatingTail" state="on" borderStyle="border" imageScaling="proportionallyDown" inset="2" id="Cj8-mo-vlY">
                                         <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
                                         <font key="font" metaFont="system"/>
@@ -911,7 +889,6 @@
                                             <tableView verticalHuggingPriority="750" allowsExpansionToolTips="YES" columnAutoresizingStyle="lastColumnOnly" columnSelection="YES" multipleSelection="NO" autosaveColumns="NO" headerView="fwS-iS-8pb" id="8rs-nD-eAB">
                                                 <rect key="frame" x="0.0" y="0.0" width="238" height="111"/>
                                                 <autoresizingMask key="autoresizingMask"/>
-                                                <animations/>
                                                 <size key="intercellSpacing" width="3" height="2"/>
                                                 <color key="backgroundColor" name="controlBackgroundColor" catalog="System" colorSpace="catalog"/>
                                                 <color key="gridColor" name="gridColor" catalog="System" colorSpace="catalog"/>
@@ -954,36 +931,28 @@
                                                 </tableColumns>
                                             </tableView>
                                         </subviews>
-                                        <animations/>
                                         <color key="backgroundColor" name="controlBackgroundColor" catalog="System" colorSpace="catalog"/>
                                     </clipView>
-                                    <animations/>
                                     <scroller key="horizontalScroller" identifier="author" hidden="YES" verticalHuggingPriority="750" horizontal="YES" id="3ML-Uh-7OI">
-                                        <rect key="frame" x="-7" y="8" width="0.0" height="15"/>
+                                        <rect key="frame" x="1" y="7" width="0.0" height="16"/>
                                         <autoresizingMask key="autoresizingMask"/>
-                                        <animations/>
                                     </scroller>
                                     <scroller key="verticalScroller" identifier="title" hidden="YES" verticalHuggingPriority="750" horizontal="NO" id="2eT-yU-iHl">
-                                        <rect key="frame" x="-14" y="15" width="15" height="0.0"/>
+                                        <rect key="frame" x="-15" y="23" width="16" height="0.0"/>
                                         <autoresizingMask key="autoresizingMask"/>
-                                        <animations/>
                                     </scroller>
                                     <tableHeaderView key="headerView" id="fwS-iS-8pb">
                                         <rect key="frame" x="0.0" y="0.0" width="238" height="23"/>
                                         <autoresizingMask key="autoresizingMask"/>
-                                        <animations/>
                                     </tableHeaderView>
                                 </scrollView>
                             </subviews>
-                            <animations/>
                         </view>
-                        <animations/>
                         <color key="borderColor" white="0.0" alpha="0.41999999999999998" colorSpace="calibratedWhite"/>
                         <color key="fillColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                     </box>
                     <searchField wantsLayer="YES" verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="zf3-fE-ou0">
                         <rect key="frame" x="463" y="227" width="96" height="22"/>
-                        <animations/>
                         <searchFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" selectable="YES" editable="YES" borderStyle="bezel" placeholderString="book" usesSingleLineMode="YES" bezelStyle="round" id="Mgr-1d-w7k">
                             <font key="font" metaFont="system"/>
                             <color key="textColor" name="controlTextColor" catalog="System" colorSpace="catalog"/>
@@ -999,7 +968,6 @@
                         </connections>
                     </searchField>
                 </subviews>
-                <animations/>
             </view>
         </window>
         <arrayController mode="entity" entityName="PragBook" automaticallyPreparesContent="YES" id="DUY-bg-bWq" userLabel="BookController">
