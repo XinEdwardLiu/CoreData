@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<model userDefinedModelVersionIdentifier="" type="com.apple.IDECoreDataModeler.DataModel" documentVersion="1.0" lastSavedToolsVersion="9048" systemVersion="15B42" minimumToolsVersion="Automatic">
+    <entity name="Author" syncable="YES">
+        <attribute name="firstName" attributeType="String" syncable="YES"/>
+        <attribute name="lastName" attributeType="String" syncable="YES"/>
+        <relationship name="books" toMany="YES" minCount="1" deletionRule="Nullify" destinationEntity="PragBook" inverseName="authors" inverseEntity="PragBook" syncable="YES"/>
+    </entity>
+    <entity name="Chapter" syncable="YES">
+        <attribute name="number" attributeType="Integer 16" syncable="YES"/>
+        <attribute name="title" optional="YES" attributeType="String" syncable="YES"/>
+        <relationship name="book" maxCount="1" deletionRule="Nullify" destinationEntity="PragBook" inverseName="chapters" inverseEntity="PragBook" syncable="YES"/>
+    </entity>
+    <entity name="PragBook" representedClassName="" syncable="YES">
+        <attribute name="title" optional="YES" attributeType="String" syncable="YES"/>
+        <relationship name="authors" toMany="YES" minCount="1" deletionRule="Nullify" destinationEntity="Author" inverseName="books" inverseEntity="Author" syncable="YES"/>
+        <relationship name="chapters" toMany="YES" minCount="1" deletionRule="Cascade" destinationEntity="Chapter" inverseName="book" inverseEntity="Chapter" syncable="YES"/>
+    </entity>
+    <elements>
+        <element name="PragBook" positionX="-55802" positionY="326" width="155" height="88"/>
+        <element name="Author" positionX="-55550" positionY="398" width="128" height="88"/>
+        <element name="Chapter" positionX="-55998" positionY="414" width="128" height="88"/>
+    </elements>
+</model>
