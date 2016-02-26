@@ -7,6 +7,8 @@
 //
 
 #import "AppDelegate.h"
+#import "PragBook+CoreDataProperties.h"
+#import "PragBook.h"
 
 @interface AppDelegate ()
 
@@ -24,6 +26,25 @@
 - (void)applicationWillTerminate:(NSNotification *)aNotification {
     // Insert code here to tear down your application
 }
+
+//
+#pragma mark - show error
+- (NSError*)application:(NSApplication*)application
+       willPresentError:(NSError*)error
+{
+    if (error)
+    {
+        NSDictionary* userInfo = [error userInfo];
+        NSLog (@"encountered the following error: %@", userInfo);
+       // Debugger();
+    }
+    
+    return error;
+}
+
+
+
+//
 
 #pragma mark - Core Data stack
 
@@ -133,28 +154,36 @@
 - (NSApplicationTerminateReply)applicationShouldTerminate:(NSApplication *)sender {
     // Save changes in the application's managed object context before the application terminates.
     
+
+    
     if (!_managedObjectContext) {
         return NSTerminateNow;
     }
     
     if (![[self managedObjectContext] commitEditing]) {
         NSLog(@"%@:%@ unable to commit editing to terminate", [self class], NSStringFromSelector(_cmd));
-        return NSTerminateCancel;
+         return NSTerminateCancel;
+     
     }
     
     if (![[self managedObjectContext] hasChanges]) {
         return NSTerminateNow;
     }
     
+
+    
     NSError *error = nil;
-    if (![[self managedObjectContext] save:&error]) {
-
-        // Customize this code block to include application-specific recovery steps.              
+    if (![[self managedObjectContext] save:&error])
+    {
+        
+        // Customize this code block to include application-specific recovery steps.
         BOOL result = [sender presentError:error];
-        if (result) {
-            return NSTerminateCancel;
+        if (result)
+        {
+             return NSTerminateCancel;
+            
         }
-
+        
         NSString *question = NSLocalizedString(@"Could not save changes while quitting. Quit anyway?", @"Quit without saves error question message");
         NSString *info = NSLocalizedString(@"Quitting now will lose any changes you have made since the last successful save", @"Quit without saves error question info");
         NSString *quitButton = NSLocalizedString(@"Quit anyway", @"Quit anyway button title");
@@ -164,15 +193,25 @@
         [alert setInformativeText:info];
         [alert addButtonWithTitle:quitButton];
         [alert addButtonWithTitle:cancelButton];
-
+        
         NSInteger answer = [alert runModal];
         
-        if (answer == NSAlertFirstButtonReturn) {
-            return NSTerminateCancel;
+        if (answer == NSAlertFirstButtonReturn)
+        {
+             return NSTerminateCancel;
+           
         }
+
     }
 
+    
     return NSTerminateNow;
+}
+
+-(IBAction)saveBtn:(id)sender{
+    NSError *error =nil;
+    [self.managedObjectContext save:&error];
+    
 }
 
 @end
